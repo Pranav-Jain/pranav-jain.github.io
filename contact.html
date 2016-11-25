@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 ul {
     list-style-type: none;
@@ -15,27 +16,66 @@ li {
     float: left;
 }
 
-li a {
-    display: block;
+
+#t{
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+}
+
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: grey;
+}
+
+/* mouse over link */
+a:hover {
+    color: grey;
+}
+
+/* selected link */
+a:active {
+    color: transparent;
+} 
+
+ul.nav li a{
+  display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
+ul.nav li a:hover{
+      background-color: #111;
 
-li a:hover:not(.active) {
-    background-color: #111;
-}
 }
 </style>
 </head>
-<body>
-<ul>
+<body bgcolor="black">
+<ul class="nav">
   	<li><a href="index.html">Home</a></li>
   <li><a href="about.html">About</a></li>
   <li><a href="projects.html">Projects</a></li>
   <li><a href="contact.html">Contact</a></li>
 </ul>
 
+<br><br><br><br><br><br>
+<h1 align="center">
+  <font face="ariel" color="white">CONTACT</font></h1>
+<p align="center">
+  <font color="white">____________<i class="fa fa-diamond" aria-hidden="true"></i>___________</font></p>
+<br>
+<h4 align="center"><font face="Lucida Console" color="white">I will be happy to hear from you.</font>
+<h4 align="center"><font face="Lucida Console" color="white">You can find me at</font>
+
+<br>
+<pre id="t">
+  <p align="center"><font color="white"><a href="https://www.facebook.com/pranav.jain.16568"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>   <a href="https://github.com/Pranav-Jain"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>   <a href="https://plus.google.com/u/1/108089797745165357221"><i class="fa fa-google-plus-official fa-3x" aria-hidden="true"></i></a>   <a href="mailto:pranav.jain70@gmail.com"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
+</font></p>
+</pre>
 </body>
 </html>
