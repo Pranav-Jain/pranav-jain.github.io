@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Pranav Jain</title>
 <style>
 
 
@@ -36,7 +36,43 @@ li a {
 li a:hover:not(.active) {
     background-color: #111;
 }
+
+.bgimg-1, .bgimg-2 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
+.bgimg-1 {
+  background-image: url("pics/flight.jpg");
+  min-height: 400px;
+}
+
+.bgimg-2 {
+  background-image: url("pics/pollution.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
 </style>
 </head>
 <body bgcolor="Black">
@@ -46,11 +82,31 @@ li a:hover:not(.active) {
   <li><a href="projects.html">Projects</a></li>
   <li><a href="contact.html">Contact</a></li>
 </ul>
-<img src="pics/flight.jpg" height="500" width="1250" align="center">
-<p align="center"><font color="White" size="6">It is an elementary project on data mining.<br>Aim of this project is to predict cancellation of flights by learning from a previous data.</font></p>
-<br><br>
-<p align="center"><a href="https://github.com/Pranav-Jain/flight_cancel"><img src="pics/check code.jpg" align="center"></a></p>
-<br><br><br><br><br><br><br>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><strong>Flight Stats</strong></span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:transparent;text-align:center;padding:50px 80px;text-align: justify;">
+  <h1 style="text-align:center;"><a href="https://github.com/Pranav-Jain/flight_cancel">Flight Stats</a></h1>
+  <p align="center"><font color="#777" size="4">It is an elementary project on data mining.<br>Aim of this project is to predict cancellation of flights by learning from a previous data.</font></p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><strong>Pollution Detector</strong></span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:transparent;text-align:center;padding:50px 80px;text-align: justify;">
+  <h1 style="text-align:center;"><a href="https://github.com/Pranav-Jain/PollutionDetector_Arduino">Pollution Detector</a></h1>
+  <p align="center"><font color="#777" size="4">A hardware project which detects the pollution around and gives an advice according to the pollution levels.<br>For this project, Arduino along with dust sensor, MQ135 and RGB LED was used.</font></p>
+</div>
+
+
+
 
 </body>
 </html>
