@@ -47,7 +47,7 @@ ul.nav li a:hover{
       background-color: #111;
 
 }
-.bgimg-1, .bgimg-2 {
+.bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
   opacity: 1;
   background-attachment: fixed;
@@ -65,7 +65,10 @@ ul.nav li a:hover{
   background-image: url("pics/pollution.jpg");
   min-height: 400px;
 }
-
+.bgimg-3 {
+  background-image: url("pics/currency.jpg");
+  min-height: 400px;
+}
 .caption {
   position: absolute;
   left: 0;
@@ -76,11 +79,46 @@ ul.nav li a:hover{
 }
 
 .caption span.border {
-  background-color: #111;
+  background-color: white;
   color: #fff;
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: grey;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: transparent;
+    text-decoration: none;
+} 
+
+ul.nav li a{
+  display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.nav li a:hover{
+      background-color: #111;
+      text-decoration: none;
+
 }
 
 </style>
@@ -95,26 +133,36 @@ ul.nav li a:hover{
 
 <div class="bgimg-1">
   <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><strong>Flight Stats</strong></span>
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><a href="https://github.com/Pranav-Jain/flight_cancel"><span title="Click for code"><strong>Flight Stats</strong></span></a></span>
   </div>
 </div>
 
 <div style="color: #777;background-color:transparent;text-align:center;padding:50px 80px;text-align: justify;">
-  <h1 style="text-align:center;"><a href="https://github.com/Pranav-Jain/flight_cancel">Flight Stats</a></h1>
-  <p align="center"><font color="#777" size="4">It is an elementary project on data mining.<br>Aim of this project is to predict cancellation of flights by learning from a previous data.</font></p>
+  <h1 style="text-align:center;"><font color="white"><u>Flight Stats</u></font></h1>
+  <p align="center"><font color="white" size="4">An elementary project on data mining which predicts the chances of cancellation of flights<br> by running a regression module on some previous data.</font></p>
 </div>
 
 <div class="bgimg-2">
   <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><strong>Pollution Detector</strong></span>
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><a href="https://github.com/Pranav-Jain/PollutionDetector_Arduino"><span title="Click for code"><strong>Pollution Detector</strong></span></a></span>
   </div>
 </div>
 
 <div style="color: #777;background-color:transparent;text-align:center;padding:50px 80px;text-align: justify;">
-  <h1 style="text-align:center;"><a href="https://github.com/Pranav-Jain/PollutionDetector_Arduino">Pollution Detector</a></h1>
-  <p align="center"><font color="#777" size="4">A hardware project which detects the pollution around and gives an advice according to the pollution levels.<br>For this project, Arduino along with dust sensor, MQ135 and RGB LED was used.</font></p>
+  <h1 style="text-align:center;"><font color="white"><u>Pollution Detector</u></font></a></h1>
+  <p align="center"><font color="white" size="4">A hardware project which detects the pollution around and gives an advice according to the pollution levels.<br>For this project, Arduino along with dust sensor, MQ135 and RGB LED was used.</font></p>
 </div>
 
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><a href="https://github.com/Pranav-Jain/Currency-Converter"><span title="Click for code"><strong>Curreny Converter</strong></span></a></span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:transparent;text-align:center;padding:50px 80px;text-align: justify;">
+  <h1 style="text-align:center;"><font color="white"><u>Currency Converter</u></font></a></h1>
+  <p align="center"><font color="white" size="4">A project that can be used to convert an amount<br> from one currency to another.</font></p>
+</div>
 
 
 
